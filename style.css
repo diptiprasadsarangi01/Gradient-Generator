@@ -138,13 +138,14 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 /* Media Query */
-@media only screen and (max-device-width: 430px) {
- .flex-container .container{
-  margin-bottom: 30vh;
-  }
-}
+
 @media only screen and (max-device-width: 850px) {
  .flex-container .container{
   margin-bottom: 20vh;
   }
 }
+@media only screen and (max-device-width: 430px) {
+  .flex-container .container{
+   margin-bottom: 50vh;
+   }
+ }
