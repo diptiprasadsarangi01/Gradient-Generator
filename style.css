@@ -142,10 +142,16 @@ input[type="color"]::-webkit-color-swatch {
 @media only screen and (max-device-width: 850px) {
  .flex-container .container{
   margin-bottom: 20vh;
+  margin-top: 10vh;
   }
+  .flex-container{
+  margin-bottom: 15vh;
+    }
 }
-@media only screen and (max-device-width: 430px) {
-  .flex-container .container{
-   margin-bottom: 50vh;
+
+@media only screen and (max-device-width: 450px) {
+  .flex-container{
+   margin-bottom: 30vh;
+   
    }
  }
