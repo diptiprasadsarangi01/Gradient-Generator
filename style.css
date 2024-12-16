@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap");
+html {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Nunito", serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}
+.footer {
+  margin-top: auto;
+  margin-bottom: 0;
+  background-color: #cbe1dedd;
+  box-shadow: 0 0 10px #8c8a8a;
+}
+.mainHeading {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  box-shadow: 0 0 10px #8c949b99;
+  padding: 40px;
+  background: #e1dadaa4;
+  border-radius: 10px;
+  animation: slide-in 0.5s ease-in-out;
+  margin-bottom: 10vh;
+}
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Content */
+
+.colors {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type="color"] {
+  appearance: none;
+  background: transparent;
+  width: 120px;
+  height: 75px;
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 5px;
+  border: none;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.buttons button {
+  height: 3rem;
+  width: 3rem;
+  padding: 5px;
+  margin: 10px;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.rotate-icon i {
+  transform: rotate(45deg);
+}
+
+.buttons .active {
+  border: none;
+  background-color: black;
+  color: #ffffff;
+}
+
+#generate {
+  display: block;
+  background-color: black;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 12px 70px;
+  border-radius: 5px;
+  margin: 0 auto 30px auto;
+  cursor: pointer;
+}
+
+#generate:hover {
+  background-color: #555;
+  color: wheat;
+}
+
+.output {
+  background-color: #f0f2fc;
+}
+
+#code {
+  width: 100%;
+  resize: none;
+  color: #30304a;
+  padding: 10px;
+  background-color: transparent;
+}
+
+#copy {
+  font-size: 1.1rem;
+  background-color: black;
+  color: #ffffff;
+  position: relative;
+  left: 80%;
+  bottom: 10px;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Media Query */
+@media only screen and (max-device-width: 430px) {
+ .flex-container .container{
+  margin-bottom: 30vh;
+  }
+}
+@media only screen and (max-device-width: 850px) {
+ .flex-container .container{
+  margin-bottom: 20vh;
+  }
+}
